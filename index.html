@@ -61,6 +61,8 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.06}
 .r h3{font-size:20.5px;letter-spacing:-.02em;display:flex;gap:10px;align-items:center}
 .r h3 svg{flex:none}
 .r p{font-size:15px;color:var(--ink2);margin-top:6px;line-height:1.5}
+.r p strong{color:var(--ink)}
+.r1{border-color:#C9D8FF;box-shadow:0 1px 2px rgba(11,20,36,.04),0 18px 36px -22px rgba(47,107,255,.45)}
 /* mini google */
 .mg{background:var(--paper);border-radius:14px;padding:10px;font-size:12.5px}
 .mg .q{display:flex;gap:7px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:99px;padding:7px 11px;white-space:nowrap;overflow:hidden}
@@ -101,12 +103,13 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.06}
 .ln span:first-child{white-space:nowrap}
 .ln .dots{flex:1;border-bottom:1.5px dotted #B7BFCC;transform:translateY(-4px);min-width:12px}
 .ln .v{white-space:nowrap;color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.ln.sub2{padding:0 0 2px;justify-content:flex-end}.ln.sub2 .v{font-size:12px;color:var(--mute)}
 .ln.tot{border-top:1.5px solid var(--ink);margin-top:6px;padding-top:7px;font-weight:500;color:var(--ink)}
 .ln.tot .v{font-size:16px}
 .st{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:9px;overflow:hidden;vertical-align:middle}
 .st button{width:26px;height:26px;display:grid;place-items:center;font-family:Manrope,sans-serif;font-weight:800;font-size:15px;color:var(--ink2);background:var(--paper)}
 .st button:active{background:var(--blue-bg)}
-.st output{min-width:52px;text-align:center;color:var(--ink);font-weight:500;padding:0 4px}
+.st output{min-width:52px;white-space:nowrap;text-align:center;color:var(--ink);font-weight:500;padding:0 4px}
 .res{margin-top:14px;background:var(--green-bg);border-radius:14px;padding:16px 16px 14px;font-family:Manrope,sans-serif;color:#064D35}
 .res .big{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .res .big b{font-size:clamp(36px,3.4vw,46px);font-weight:800;letter-spacing:-.04em;color:var(--green);line-height:1;font-variant-numeric:tabular-nums}
@@ -130,6 +133,8 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.06}
 .b.mid .t i{background:#A9B3C4}
 .b.mid span{color:var(--mute);font-style:normal}
 .b em{font-style:normal;font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.hl{margin-top:20px;font-size:16.5px;line-height:1.55;color:var(--ink);font-weight:600;max-width:40em}
+.hl mark{background:linear-gradient(transparent 52%,#FFE58A 52%);color:var(--ink);font-weight:800;padding:0 2px}
 .src{font-size:12px;color:var(--mute);margin-top:16px;line-height:1.5;max-width:46em}
 .get ul{list-style:none;margin-top:20px;display:grid;gap:0;border-top:1px solid var(--rule)}
 .get li{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule);font-size:16px}
@@ -194,16 +199,16 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
   </div>
 
     <div class="why">
-      <h2>Γιατί έρχεται ο πελάτης</h2>
-      <div class="r">
-        <div><h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="#2F6BFF" stroke-width="2.2"/><path d="M15.5 15.5L21 21" stroke="#2F6BFF" stroke-width="2.2" stroke-linecap="round"/></svg>Σας βρίσκει στο Google</h3>
-          <p>Στήνουμε τη σελίδα στις λέξεις που ψάχνει: την περιοχή, τις υπηρεσίες και το όνομά σας.</p></div>
-        <div class="mg" id="mg" aria-hidden="true"><div class="q"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#5F6368" stroke-width="2.4"/><path d="M15.5 15.5L21 21" stroke="#5F6368" stroke-width="2.4" stroke-linecap="round"/></svg><span id="mq">οδοντίατρος Μενίδι</span></div><div class="hit"><small>1ο ΑΠΟΤΕΛΕΣΜΑ</small><u id="mt">Οδοντίατρος στο Μενίδι — Το όνομά σας</u></div></div>
+      <h2>Δύο λόγοι</h2>
+      <div class="r r1">
+        <div><h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z" stroke="#2F6BFF" stroke-width="2" stroke-linejoin="round"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8" stroke="#2F6BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Μια σελίδα που σας αξίζει</h3>
+          <p>Είναι σχεδόν 2027. Χρόνια σπουδών, δεκάδες χιλιάδες ευρώ στον χώρο και τον εξοπλισμό σας — και στο internet, εκεί που ψάχνουν πια όλοι, <strong>μια γραμμή σε έναν κατάλογο;</strong> Ακόμα κι όποιος σας συστήνεται, πρώτα σας ψάχνει.</p></div>
+        <div class="mc" aria-hidden="true"><div class="ls"><i></i><i></i><i></i><i></i></div><figure><img id="mci" src="assets/img/pefanis-s.webp" alt="" width="640" height="367"></figure><div class="lbls"><span>κατάλογος</span><b>η δική σας σελίδα</b></div></div>
       </div>
       <div class="r">
-        <div><h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z" stroke="#2F6BFF" stroke-width="2" stroke-linejoin="round"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8" stroke="#2F6BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Σας εμπιστεύεται</h3>
-          <p>Ακόμα κι αν σας σύστησαν, πρώτα σας ψάχνει. Βρίσκει μια δική σας σελίδα — όχι μια γραμμή σε κατάλογο.</p></div>
-        <div class="mc" aria-hidden="true"><div class="ls"><i></i><i></i><i></i><i></i></div><figure><img id="mci" src="assets/img/pefanis-s.webp" alt="" width="640" height="367"></figure><div class="lbls"><span>κατάλογος</span><b>η δική σας σελίδα</b></div></div>
+        <div><h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="#2F6BFF" stroke-width="2.2"/><path d="M15.5 15.5L21 21" stroke="#2F6BFF" stroke-width="2.2" stroke-linecap="round"/></svg>Σας βρίσκουν στο Google</h3>
+          <p>Τη στήνουμε στις λέξεις που ψάχνουν οι πελάτες σας: την περιοχή, τις υπηρεσίες και το όνομά σας — 24 ώρες τη μέρα.</p></div>
+        <div class="mg" id="mg" aria-hidden="true"><div class="q"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#5F6368" stroke-width="2.4"/><path d="M15.5 15.5L21 21" stroke="#5F6368" stroke-width="2.4" stroke-linecap="round"/></svg><span id="mq">οδοντίατρος Μενίδι</span></div><div class="hit"><small>1ο ΑΠΟΤΕΛΕΣΜΑ</small><u id="mt">Οδοντίατρος στο Μενίδι — Το όνομά σας</u></div></div>
       </div>
       <p class="proof"><span>Από τις σελίδες μας: έως <strong>68</strong> επισκέψεις από το Google τον μήνα.</span> <a href="#numbers">Δείτε τα νούμερα ↓</a></p>
     </div>
@@ -218,13 +223,14 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
       <div class="ln"><span>ΦΠΑ 24%</span><span class="dots"></span><span class="v">31,20€</span></div>
       <div class="ln tot"><span>Σύνολο</span><span class="dots"></span><span class="v">161,20€</span></div>
       <h4>ΕΝΑΣ ΝΕΟΣ ΠΕΛΑΤΗΣ</h4>
-      <div class="ln"><span id="l1">Τιμή συνεδρίας</span><span class="dots"></span><span class="st"><button type="button" data-k="p" data-d="-1" aria-label="Λιγότερο">−</button><output id="op">50€</output><button type="button" data-k="p" data-d="1" aria-label="Περισσότερο">+</button></span></div>
-      <div class="ln"><span id="l2">Φορές τον χρόνο</span><span class="dots"></span><span class="st"><button type="button" data-k="v" data-d="-1" aria-label="Λιγότερες">−</button><output id="ov">20</output><button type="button" data-k="v" data-d="1" aria-label="Περισσότερες">+</button></span></div>
-      <div class="ln tot"><span>Έσοδα</span><span class="dots"></span><span class="v" id="orev">1.000,00€</span></div>
+      <div class="ln"><span id="l1">Τιμή ραντεβού</span><span class="dots"></span><span class="st"><button type="button" data-k="p" data-d="-1" aria-label="Λιγότερο">−</button><output id="op">30€</output><button type="button" data-k="p" data-d="1" aria-label="Περισσότερο">+</button></span></div>
+      <div class="ln"><span id="l2">Ραντεβού τον χρόνο</span><span class="dots"></span><span class="st"><button type="button" data-k="v" data-d="-1" aria-label="Λιγότερες">−</button><output id="ov">24</output><button type="button" data-k="v" data-d="1" aria-label="Περισσότερες">+</button></span></div>
+      <div class="ln sub2"><span></span><span class="v" id="ovm">2 τον μήνα</span></div>
+      <div class="ln tot"><span>Έσοδα</span><span class="dots"></span><span class="v" id="orev">720,00€</span></div>
       <div class="res" aria-live="polite">
-        <div class="big"><b id="oprofit">+838,80€</b><span>κέρδος την πρώτη<br>χρονιά</span></div>
+        <div class="big"><b id="oprofit">+558,80€</b><span>κέρδος την πρώτη<br>χρονιά</span></div>
         <div class="bar"><i id="obar"></i><s id="ocost"></s></div>
-        <p id="obe">Πληρώθηκε από την 4η συνεδρία. Ό,τι έρθει μετά είναι κέρδος.</p>
+        <p id="obe">Πληρώθηκε από το 6ο ραντεβού — δηλαδή τον 3ο μήνα. Ό,τι έρθει μετά είναι κέρδος.</p>
       </div>
       <p class="fine">Παράδειγμα με έναν μόνο νέο πελάτη. Αλλάξτε τις τιμές με τα + / −.</p>
     </div></div>
@@ -236,6 +242,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
     <h2>Τι φέρνει το Google στις σελίδες μας, κάθε μήνα</h2>
     <p class="note">Επισκέψεις από αναζήτηση στο Google, τελευταίες 28 ημέρες. Πραγματικά στοιχεία από το Google Search Console. Χρειάζεστε έναν πελάτη.</p>
     <div class="bars" id="bars"></div>
+    <p class="hl">Μετράμε μόνο όσους ήρθαν από αναζήτηση στο Google — <mark>όχι από Google Maps, Instagram ή όσους γράφουν απευθείας τη διεύθυνση.</mark> Οι πραγματικοί επισκέπτες είναι περισσότεροι.</p>
     <p class="src" id="src"></p>
   </div>
   <div class="get">
@@ -259,7 +266,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
 <div class="vm" id="vm" role="dialog" aria-modal="true" aria-label="Βίντεο"><button type="button" id="vmx" aria-label="Κλείσιμο">×</button><video id="vid" controls playsinline preload="none" poster="assets/video/poster.jpg"><source src="assets/video/advon-logariasmos.mp4" type="video/mp4"></video></div>
 
 <script>
-const DATA={"queries": [{"k": "area", "q": "ψυχολόγος Νέα Ιωνία", "t": "Ψυχολόγος στη Νέα Ιωνία — Ψυχοθεραπεία Ενηλίκων", "d": "Ατομικές συνεδρίες, ζευγάρια και έφηβοι. Κλείστε ραντεβού online ή τηλεφωνικά.", "u": "www.to-onoma-sas.gr"}, {"k": "svc", "q": "συνθετική ψυχοθεραπεία", "t": "Συνθετική Ψυχοθεραπεία — Τι είναι & πώς βοηθά", "d": "Μια προσέγγιση προσαρμοσμένη σε εσάς. Δείτε πώς δουλεύουμε και κλείστε μια πρώτη συνάντηση.", "u": "www.to-onoma-sas.gr › ypiresies"}, {"k": "name", "q": "το όνομά σας + κριτικές", "t": "Το όνομά σας — Ψυχολόγος, MSc", "d": "Σπουδές, εμπειρία, ο χώρος σας και οι πραγματικές κριτικές των πελατών σας από το Google.", "u": "www.to-onoma-sas.gr"}, {"k": "area", "q": "οδοντίατρος Μενίδι", "t": "Οδοντίατρος στο Μενίδι — Εμφυτεύματα & Αισθητική", "d": "Σύγχρονο ιατρείο, ωράριο, πώς θα έρθετε και ραντεβού με ένα κλικ.", "u": "www.to-onoma-sas.gr"}, {"k": "svc", "q": "λεύκανση δοντιών", "t": "Λεύκανση Δοντιών — Διαδικασία & Συχνές Ερωτήσεις", "d": "Πόσο κρατά, για ποιον είναι κατάλληλη, τι να περιμένετε.", "u": "www.to-onoma-sas.gr › leykansi"}, {"k": "area", "q": "παιδίατρος Καλλιθέα", "t": "Παιδίατρος στην Καλλιθέα — Εμβόλια & Παρακολούθηση", "d": "Ωράριο, επείγοντα, κατ' οίκον επισκέψεις. Καλέστε με ένα πάτημα.", "u": "www.to-onoma-sas.gr"}], "kw": {"area": ["ψυχολόγος Νέα Ιωνία", "οδοντίατρος Μενίδι", "παιδίατρος Καλλιθέα", "παιδίατρος Θεσσαλονίκη", "παθολόγος Νέο Ηράκλειο", "ψυχολόγος Μοσχάτο", "ψυχολόγος Πάτρα", "οφθαλμίατρος Νέα Πεντέλη", "οδοντίατρος Συκιές", "παιδίατρος Καλαμαριά", "ψυχολόγος Γλυφάδα", "παιδίατρος κοντά μου"], "svc": ["συνθετική ψυχοθεραπεία", "γνωσιακή ψυχοθεραπεία", "συστημική ψυχοθεραπεία", "συμβουλευτική γονέων", "προσθετολόγος", "λεύκανση δοντιών", "παιδοψυχολόγος Αιγάλεω", "νευροψυχολόγος", "παιδοαιματολόγος Θεσσαλονίκη", "ψυχαναλυτική ψυχοθεραπεία"], "name": ["ονοματεπώνυμο", "επώνυμο + ψυχολόγος", "όνομα + αξιολογήσεις", "επώνυμο + παιδίατρος", "όνομα + τηλέφωνο", "επώνυμο + οδοντίατρος", "όνομα + διεύθυνση", "κριτικές για + όνομα"]}, "impTotalTxt": "65.000+", "impTotalCap": "φορές εμφανίστηκαν στο Google <strong>74 ιστοσελίδες πελατών μας</strong> τους τελευταίους 3 μήνες — σε αναζητήσεις για περιοχή, υπηρεσίες και όνομα.", "portfolio": [{"img": "kastritsis", "label": "Καστρίτσης"}, {"img": "fasoula", "label": "Φασούλα"}, {"img": "tsonidou", "label": "Τσονίδου"}, {"img": "pefanis", "label": "Πεφάνης"}, {"img": "loulou", "label": "Λούλου"}, {"img": "oikonomou", "label": "Οικονόμου"}, {"img": "patridou", "label": "Πατρίδου"}, {"img": "stergiop", "label": "Στεργιοπούλου"}, {"img": "ditsa", "label": "Βιώ"}], "gsc": {"s1": "65.000+", "s1t": "εμφανίσεις στο Google σε 3 μήνες, για 74 ιστοσελίδες μας", "s2": "28/61", "s2t": "από τις σελίδες με 3+ μήνες στο Google φέρνουν <strong style=\"color:#fff\">10 ή περισσότερες</strong> επισκέψεις τον μήνα", "s3": "68", "s3t": "επισκέψεις τον τελευταίο μήνα στη σελίδα με τις περισσότερες — και αρκετές περνούν τις 50", "rows": [{"l": "Νευροψυχολόγος", "v": 68}, {"l": "Παιδίατρος · Καλλιθέα", "v": 59}, {"l": "Παιδίατρος", "v": 55}, {"l": "Οφθαλμίατρος", "v": 43}, {"l": "Οδοντίατρος · Μενίδι", "v": 37}, {"l": "Οδοντιατρείο", "v": 31}, {"l": "Ψυχολόγος · Μαρούσι", "v": 31}, {"l": "Παιδίατρος · Θεσσαλονίκη", "v": 30}, {"l": "Ψυχολόγος", "v": 26}, {"l": "Οδοντίατρος", "v": 23}, {"l": "Παιδοψυχολόγος · Αιγάλεω", "v": 22}, {"l": "Ψυχολόγος · Καλλιθέα", "v": 21}], "medianMonthly": 8, "src": "Πηγή: Google Search Console των ιστοσελίδων μας, τελευταίες 28 ημέρες και 3 μήνες (στοιχεία 16/10/2026). Μετράμε μόνο επισκέψεις από αναζήτηση στο Google — όχι από Instagram, Facebook, Google Maps ή όσους πληκτρολογούν τη διεύθυνση. Η διάμεση σελίδα φέρνει 8 τον μήνα· οι νεότερες ανεβαίνουν όσο τις μαθαίνει το Google."}, "prof": [{"n": "Ψυχολόγος", "price": 50, "visits": 20, "unit": "Τιμή ανά συνεδρία", "unit2": "Συνεδρίες ανά πελάτη τον χρόνο", "be": "από την {n}η συνεδρία"}, {"n": "Παιδίατρος", "price": 50, "visits": 6, "unit": "Τιμή ανά επίσκεψη", "unit2": "Επισκέψεις ανά παιδί τον χρόνο", "be": "από την {n}η επίσκεψη"}, {"n": "Οδοντίατρος", "price": 80, "visits": 4, "unit": "Μέση αξία επίσκεψης", "unit2": "Επισκέψεις ανά ασθενή τον χρόνο", "be": "από την {n}η επίσκεψη"}, {"n": "Φυσικοθεραπευτής", "price": 35, "visits": 10, "unit": "Τιμή ανά συνεδρία", "unit2": "Συνεδρίες ανά πελάτη τον χρόνο", "be": "από την {n}η συνεδρία"}, {"n": "Λογιστής", "price": 60, "visits": 12, "unit": "Μηνιαία αμοιβή", "unit2": "Μήνες τον χρόνο", "be": "από τον {n}ο μήνα"}, {"n": "Δικηγόρος", "price": 400, "visits": 1, "unit": "Αμοιβή ανά υπόθεση", "unit2": "Υποθέσεις ανά πελάτη τον χρόνο", "be": "από την {n}η υπόθεση"}]};
+const DATA={"queries": [{"k": "area", "q": "ψυχολόγος Νέα Ιωνία", "t": "Ψυχολόγος στη Νέα Ιωνία — Ψυχοθεραπεία Ενηλίκων", "d": "Ατομικές συνεδρίες, ζευγάρια και έφηβοι. Κλείστε ραντεβού online ή τηλεφωνικά.", "u": "www.to-onoma-sas.gr"}, {"k": "svc", "q": "συνθετική ψυχοθεραπεία", "t": "Συνθετική Ψυχοθεραπεία — Τι είναι & πώς βοηθά", "d": "Μια προσέγγιση προσαρμοσμένη σε εσάς. Δείτε πώς δουλεύουμε και κλείστε μια πρώτη συνάντηση.", "u": "www.to-onoma-sas.gr › ypiresies"}, {"k": "name", "q": "το όνομά σας + κριτικές", "t": "Το όνομά σας — Ψυχολόγος, MSc", "d": "Σπουδές, εμπειρία, ο χώρος σας και οι πραγματικές κριτικές των πελατών σας από το Google.", "u": "www.to-onoma-sas.gr"}, {"k": "area", "q": "οδοντίατρος Μενίδι", "t": "Οδοντίατρος στο Μενίδι — Εμφυτεύματα & Αισθητική", "d": "Σύγχρονο ιατρείο, ωράριο, πώς θα έρθετε και ραντεβού με ένα κλικ.", "u": "www.to-onoma-sas.gr"}, {"k": "svc", "q": "λεύκανση δοντιών", "t": "Λεύκανση Δοντιών — Διαδικασία & Συχνές Ερωτήσεις", "d": "Πόσο κρατά, για ποιον είναι κατάλληλη, τι να περιμένετε.", "u": "www.to-onoma-sas.gr › leykansi"}, {"k": "area", "q": "παιδίατρος Καλλιθέα", "t": "Παιδίατρος στην Καλλιθέα — Εμβόλια & Παρακολούθηση", "d": "Ωράριο, επείγοντα, κατ' οίκον επισκέψεις. Καλέστε με ένα πάτημα.", "u": "www.to-onoma-sas.gr"}], "kw": {"area": ["ψυχολόγος Νέα Ιωνία", "οδοντίατρος Μενίδι", "παιδίατρος Καλλιθέα", "παιδίατρος Θεσσαλονίκη", "παθολόγος Νέο Ηράκλειο", "ψυχολόγος Μοσχάτο", "ψυχολόγος Πάτρα", "οφθαλμίατρος Νέα Πεντέλη", "οδοντίατρος Συκιές", "παιδίατρος Καλαμαριά", "ψυχολόγος Γλυφάδα", "παιδίατρος κοντά μου"], "svc": ["συνθετική ψυχοθεραπεία", "γνωσιακή ψυχοθεραπεία", "συστημική ψυχοθεραπεία", "συμβουλευτική γονέων", "προσθετολόγος", "λεύκανση δοντιών", "παιδοψυχολόγος Αιγάλεω", "νευροψυχολόγος", "παιδοαιματολόγος Θεσσαλονίκη", "ψυχαναλυτική ψυχοθεραπεία"], "name": ["ονοματεπώνυμο", "επώνυμο + ψυχολόγος", "όνομα + αξιολογήσεις", "επώνυμο + παιδίατρος", "όνομα + τηλέφωνο", "επώνυμο + οδοντίατρος", "όνομα + διεύθυνση", "κριτικές για + όνομα"]}, "impTotalTxt": "65.000+", "impTotalCap": "φορές εμφανίστηκαν στο Google <strong>74 ιστοσελίδες πελατών μας</strong> τους τελευταίους 3 μήνες — σε αναζητήσεις για περιοχή, υπηρεσίες και όνομα.", "portfolio": [{"img": "kastritsis", "label": "Καστρίτσης"}, {"img": "fasoula", "label": "Φασούλα"}, {"img": "tsonidou", "label": "Τσονίδου"}, {"img": "pefanis", "label": "Πεφάνης"}, {"img": "loulou", "label": "Λούλου"}, {"img": "oikonomou", "label": "Οικονόμου"}, {"img": "patridou", "label": "Πατρίδου"}, {"img": "stergiop", "label": "Στεργιοπούλου"}, {"img": "ditsa", "label": "Βιώ"}], "gsc": {"s1": "65.000+", "s1t": "εμφανίσεις στο Google σε 3 μήνες, για 74 ιστοσελίδες μας", "s2": "28/61", "s2t": "από τις σελίδες με 3+ μήνες στο Google φέρνουν <strong style=\"color:#fff\">10 ή περισσότερες</strong> επισκέψεις τον μήνα", "s3": "68", "s3t": "επισκέψεις τον τελευταίο μήνα στη σελίδα με τις περισσότερες — και αρκετές περνούν τις 50", "rows": [{"l": "Νευροψυχολόγος", "v": 68}, {"l": "Παιδίατρος · Καλλιθέα", "v": 59}, {"l": "Παιδίατρος", "v": 55}, {"l": "Οφθαλμίατρος", "v": 43}, {"l": "Οδοντίατρος · Μενίδι", "v": 37}, {"l": "Οδοντιατρείο", "v": 31}, {"l": "Ψυχολόγος · Μαρούσι", "v": 31}, {"l": "Παιδίατρος · Θεσσαλονίκη", "v": 30}, {"l": "Ψυχολόγος", "v": 26}, {"l": "Οδοντίατρος", "v": 23}, {"l": "Παιδοψυχολόγος · Αιγάλεω", "v": 22}, {"l": "Ψυχολόγος · Καλλιθέα", "v": 21}], "medianMonthly": 8, "src": "Πηγή: Google Search Console των ιστοσελίδων μας, τελευταίες 28 ημέρες και 3 μήνες (στοιχεία 16/10/2026). Μετράμε μόνο επισκέψεις από αναζήτηση στο Google — όχι από Instagram, Facebook, Google Maps ή όσους πληκτρολογούν τη διεύθυνση. Η διάμεση σελίδα φέρνει 8 τον μήνα· οι νεότερες ανεβαίνουν όσο τις μαθαίνει το Google."}, "prof": [{"n": "Μέσο ραντεβού", "price": 30, "visits": 24, "unit": "Τιμή ραντεβού", "unit2": "Ραντεβού τον χρόνο", "be": "από το {n}ο ραντεβού"}, {"n": "Ψυχολόγος", "price": 50, "visits": 20, "unit": "Τιμή ανά συνεδρία", "unit2": "Συνεδρίες ανά πελάτη τον χρόνο", "be": "από την {n}η συνεδρία"}, {"n": "Παιδίατρος", "price": 50, "visits": 6, "unit": "Τιμή ανά επίσκεψη", "unit2": "Επισκέψεις ανά παιδί τον χρόνο", "be": "από την {n}η επίσκεψη"}, {"n": "Οδοντίατρος", "price": 80, "visits": 4, "unit": "Μέση αξία επίσκεψης", "unit2": "Επισκέψεις ανά ασθενή τον χρόνο", "be": "από την {n}η επίσκεψη"}, {"n": "Φυσικοθεραπευτής", "price": 35, "visits": 10, "unit": "Τιμή ανά συνεδρία", "unit2": "Συνεδρίες ανά πελάτη τον χρόνο", "be": "από την {n}η συνεδρία"}, {"n": "Λογιστής", "price": 60, "visits": 12, "unit": "Μηνιαία αμοιβή", "unit2": "Μήνες τον χρόνο", "be": "από τον {n}ο μήνα"}, {"n": "Δικηγόρος", "price": 400, "visits": 1, "unit": "Αμοιβή ανά υπόθεση", "unit2": "Υποθέσεις ανά πελάτη τον χρόνο", "be": "από την {n}η υπόθεση"}]};
 (function(){
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -280,14 +287,15 @@ let shown=0;
 function tick(el,from,to,fmt){ if(RM||document.hidden){el.textContent=fmt(to);return;} const t0=performance.now(), D=450; const f=t=>{const k=Math.min(1,(t-t0)/D), e=1-Math.pow(1-k,3); el.textContent=fmt(from+(to-from)*e); if(k<1) requestAnimationFrame(f);}; requestAnimationFrame(f); setTimeout(()=>el.textContent=fmt(to),D+80); }
 function calc(){
   $('#l1').textContent=cur.unit; $('#l2').textContent=cur.unit2;
-  $('#op').textContent=price.toLocaleString('el-GR')+'€'; $('#ov').textContent=visits;
+  $('#op').textContent=price.toLocaleString('el-GR')+'€'; $('#ov').textContent=visits; $('#ovm').textContent=(visits%12===0?(visits/12):(visits/12).toFixed(1).replace('.',','))+' τον μήνα';
   const rev=price*visits, profit=rev-COST;
   $('#orev').textContent=eur(rev);
   tick($('#oprofit'),shown,profit,n=>(n>=0?'+':'−')+eur(Math.abs(n))); shown=profit;
   const mx=Math.max(rev,COST);
   $('#obar').style.width=(rev/mx*100)+'%'; $('#ocost').style.left=(COST/mx*100)+'%';
   const be=Math.ceil(COST/price);
-  $('#obe').textContent = be>visits ? 'Με αυτές τις τιμές χρειάζεται λίγο παραπάνω από έναν πελάτη.' : ('Πληρώθηκε '+cur.be.replace('{n}',be)+'. Ό,τι έρθει μετά είναι κέρδος.');
+  const mo=Math.ceil(be/(visits/12)); const moTxt=(visits>=6&&mo<=12&&cur.n!=='Λογιστής')?(' — δηλαδή τον '+mo+'ο μήνα'):'';
+  $('#obe').textContent = be>visits ? 'Με αυτές τις τιμές χρειάζεται λίγο παραπάνω από έναν πελάτη.' : ('Πληρώθηκε '+cur.be.replace('{n}',be)+moTxt+'. Ό,τι έρθει μετά είναι κέρδος.');
 }
 calc();
 
@@ -302,9 +310,8 @@ setInterval(()=>{ if(document.hidden||RM) return; ii=(ii+1)%IM.length; mci.style
 
 /* numbers */
 const R=DATA.gsc.rows.slice(0,8); const mx=70; const bars=$('#bars');
-bars.innerHTML=R.map(r=>'<div class="b"><span>'+r.l+'</span><div class="t"><i data-w="'+(r.v/mx*100)+'"></i></div><em>'+r.v+'</em></div>').join('')+
- '<div class="b mid"><span>Η «μεσαία» σελίδα μας</span><div class="t"><i data-w="'+(DATA.gsc.medianMonthly/mx*100)+'"></i></div><em>'+DATA.gsc.medianMonthly+'</em></div>';
-$('#src').textContent='Πηγή: Google Search Console, '+DATA.gsc.s2.split('/')[1]+' σελίδες μας με 3+ μήνες στο Google (16/10/2026). Μετράμε μόνο επισκέψεις από αναζήτηση — όχι από Google Maps, Instagram ή όσους γράφουν τη διεύθυνση. Οι νεότερες σελίδες ανεβαίνουν όσο τις μαθαίνει το Google.';
+bars.innerHTML=R.map(r=>'<div class="b"><span>'+r.l+'</span><div class="t"><i data-w="'+(r.v/mx*100)+'"></i></div><em>'+r.v+'</em></div>').join('');
+$('#src').textContent='Πηγή: Google Search Console των σελίδων μας, τελευταίες 28 ημέρες (16/10/2026).';
 const fill=()=>$$('#bars i').forEach((el,i)=>setTimeout(()=>el.style.width=el.dataset.w+'%',RM?0:i*60));
 if('IntersectionObserver' in window){ const io=new IntersectionObserver(e=>{ if(e[0].isIntersecting){ fill(); io.disconnect(); } },{rootMargin:'0px 0px -10% 0px'}); io.observe(bars); setTimeout(()=>{ if(document.hidden) fill(); },1500); } else fill();
 
