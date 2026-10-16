@@ -71,7 +71,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.06}
 .mg .hit{margin-top:7px;background:#fff;border:1.5px solid #C9DAFF;border-radius:10px;padding:7px 9px;line-height:1.3;transition:opacity .35s,transform .35s cubic-bezier(.2,.8,.2,1)}
 .mg .hit u{text-decoration:none;color:#1A0DAB;font-weight:700;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mg .hit small{color:var(--green);font-weight:800;font-size:10.5px;letter-spacing:.04em}
-.mg.swap .hit{opacity:.3;transform:translateY(3px)}
+.mg.swap .hit{opacity:0;transform:translateY(4px)}
 /* mini compare */
 .mc{display:grid;grid-template-columns:.8fr 1.2fr;gap:8px;align-items:center}
 .mc .ls{background:#ECEEF2;border-radius:10px;padding:7px;display:grid;gap:5px}
@@ -183,6 +183,12 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
 }
 
 /* ---- v4 layout: reasons first, then the bill ---- */
+.onec{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--ink);color:#fff;border-radius:18px;padding:16px 20px 16px 18px;box-shadow:0 18px 34px -18px rgba(11,20,36,.7)}
+.onec>b{font-size:clamp(64px,6vw,88px);line-height:.85;font-weight:800;letter-spacing:-.06em;color:#7BE3B6;font-variant-numeric:tabular-nums}
+.rs .onec p{color:#fff;font-size:clamp(17px,1.5vw,20px);line-height:1.3;margin:0}
+.rs .onec strong{display:block;font-size:clamp(20px,1.9vw,26px);font-weight:800;letter-spacing:-.02em;color:#fff}
+.onec span{display:block;color:#C9D4E6;font-size:15px;line-height:1.45;margin-top:6px;font-weight:500}
+.onec em{font-style:normal;color:#fff;font-weight:800;background:linear-gradient(transparent 58%,rgba(123,227,182,.45) 58%)}
 .intro,.why,.calc{grid-area:auto}
 .toplink{font-weight:800;font-size:14.5px;text-decoration:none;color:var(--blue-d);padding:9px 14px;border-radius:99px;background:var(--white);border:1px solid var(--rule)}
 .intro{padding-top:clamp(10px,2vh,28px)}
@@ -251,6 +257,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
     <div class="rhead"><span class="no">2</span><h2>Σας βρίσκουν στο Google</h2></div>
     <p>Τη στήνουμε στις λέξεις που ψάχνουν οι πελάτες σας: <strong>την περιοχή, τις υπηρεσίες και το όνομά σας</strong> — 24 ώρες τη μέρα.</p>
     <p class="warm"><b>Οργανικές αναζητήσεις, όχι διαφήμιση.</b> Όποιος σας βρίσκει έτσι ψάχνει ήδη αυτό που κάνετε — είναι <mark>ζεστός πελάτης</mark>, έτοιμος να κλείσει ραντεβού.</p>
+    <div class="onec"><b>1</b><p><strong>νέος πελάτης τον χρόνο αρκεί</strong><span>— από <em>εκατοντάδες</em> οργανικές, στοχευμένες αναζητήσεις ανθρώπων που ψάχνουν ήδη αυτό που κάνετε.</span></p></div>
     <div class="mg" id="mg" aria-hidden="true"><div class="q"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#5F6368" stroke-width="2.4"/><path d="M15.5 15.5L21 21" stroke="#5F6368" stroke-width="2.4" stroke-linecap="round"/></svg><span id="mq">οδοντίατρος Μενίδι</span></div><div class="hit"><small>1ο ΑΠΟΤΕΛΕΣΜΑ · ΟΡΓΑΝΙΚΟ</small><u id="mt">Οδοντίατρος στο Μενίδι — Το όνομά σας</u></div></div>
   </article>
 </section>
@@ -350,8 +357,8 @@ calc();
 /* mini google: real searches from our sites */
 const Q=[['οδοντίατρος Μενίδι','Οδοντίατρος στο Μενίδι — Το όνομά σας'],['παιδίατρος Καλλιθέα','Παιδίατρος στην Καλλιθέα — Το όνομά σας'],['συνθετική ψυχοθεραπεία','Συνθετική ψυχοθεραπεία — Το όνομά σας'],['ψυχολόγος Νέα Ιωνία','Ψυχολόγος στη Νέα Ιωνία — Το όνομά σας'],['επώνυμο + κριτικές','Το όνομά σας — Κριτικές & ραντεβού']];
 let qi=0; const mg=$('#mg'), mq=$('#mq'), mt=$('#mt');
-function nextQ(){ if(document.hidden||RM) return; qi=(qi+1)%Q.length; mg.classList.add('swap'); const s=Q[qi][0]; let i=0; mq.textContent='';
-  const ty=()=>{ i++; mq.textContent=s.slice(0,i); if(i<s.length) setTimeout(ty,55); else setTimeout(()=>{ mt.textContent=Q[qi][1]; mg.classList.remove('swap'); },250); }; ty(); }
+function nextQ(){ if(document.hidden||RM) return; qi=(qi+1)%Q.length; mg.classList.add('swap'); const s=Q[qi][0]; let i=0; mq.textContent=''; setTimeout(()=>{ mt.textContent=Q[qi][1]; },200);
+  const ty=()=>{ i++; mq.textContent=s.slice(0,i); if(i<s.length) setTimeout(ty,55); else setTimeout(()=>{ mg.classList.remove('swap'); },250); }; ty(); }
 setInterval(nextQ,3600);
 const IM=['pefanis','patridou','oikonomou']; let ii=0; const mci=$('#mci');
 setInterval(()=>{ if(document.hidden||RM) return; ii=(ii+1)%IM.length; mci.style.opacity=0; setTimeout(()=>{ mci.src='assets/img/'+IM[ii]+'-s.webp'; mci.onload=()=>mci.style.opacity=1; },300); },4200);
