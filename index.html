@@ -184,10 +184,12 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
 
 /* ---- v4 layout: reasons first, then the bill ---- */
 .onec{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--ink);color:#fff;border-radius:18px;padding:16px 20px 16px 18px;box-shadow:0 18px 34px -18px rgba(11,20,36,.7)}
-.onec>b{font-size:clamp(64px,6vw,88px);line-height:.85;font-weight:800;letter-spacing:-.06em;color:#7BE3B6;font-variant-numeric:tabular-nums}
-.rs .onec p{color:#fff;font-size:clamp(17px,1.5vw,20px);line-height:1.3;margin:0}
-.rs .onec strong{display:block;font-size:clamp(20px,1.9vw,26px);font-weight:800;letter-spacing:-.02em;color:#fff}
-.onec span{display:block;color:#C9D4E6;font-size:15px;line-height:1.45;margin-top:6px;font-weight:500}
+.onec>b{font-size:clamp(52px,4.6vw,68px);line-height:.85;font-weight:800;letter-spacing:-.06em;color:#7BE3B6;font-variant-numeric:tabular-nums}
+.rs .onec p{color:#fff;font-size:16px;line-height:1.3;margin:0}
+.rs .onec strong{display:block;font-size:clamp(18px,1.55vw,21px);font-weight:800;letter-spacing:-.02em;color:#fff}
+.onec span{display:block;color:#C9D4E6;font-size:14px;line-height:1.45;margin-top:6px;font-weight:500}
+.onec .calcl{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);padding-top:10px;font-size:14.5px;color:#DCE5F4;line-height:1.45}
+.onec .calcl b{color:#7BE3B6;font-weight:800}
 .onec em{font-style:normal;color:#fff;font-weight:800;background:linear-gradient(transparent 58%,rgba(123,227,182,.45) 58%)}
 .intro,.why,.calc{grid-area:auto}
 .toplink{font-weight:800;font-size:14.5px;text-decoration:none;color:var(--blue-d);padding:9px 14px;border-radius:99px;background:var(--white);border:1px solid var(--rule)}
@@ -239,7 +241,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
 
 <main>
 <section class="wrap intro">
-  <h1><span class="nb">Ένας πελάτης πληρώνει</span> <b class="nb">όλη τη χρονιά.</b></h1>
+  <h1><span class="nb">1 πελάτης πληρώνει</span> <b class="nb">όλη τη χρονιά.</b></h1>
   <p class="sub">Η ιστοσελίδα κοστίζει <strong>130€ + ΦΠΑ τον χρόνο</strong> και η κατασκευή δεν χρεώνεται. Δύο λόγοι που φέρνει πελάτες — και ο λογαριασμός με τις δικές σας τιμές.</p>
 </section>
 
@@ -257,7 +259,7 @@ footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px;ba
     <div class="rhead"><span class="no">2</span><h2>Σας βρίσκουν στο Google</h2></div>
     <p>Τη στήνουμε στις λέξεις που ψάχνουν οι πελάτες σας: <strong>την περιοχή, τις υπηρεσίες και το όνομά σας</strong> — 24 ώρες τη μέρα.</p>
     <p class="warm"><b>Οργανικές αναζητήσεις, όχι διαφήμιση.</b> Όποιος σας βρίσκει έτσι ψάχνει ήδη αυτό που κάνετε — είναι <mark>ζεστός πελάτης</mark>, έτοιμος να κλείσει ραντεβού.</p>
-    <div class="onec"><b>1</b><p><strong>νέος πελάτης τον χρόνο αρκεί</strong><span>— από <em>εκατοντάδες</em> οργανικές, στοχευμένες αναζητήσεις ανθρώπων που ψάχνουν ήδη αυτό που κάνετε.</span></p></div>
+    <div class="onec"><b>1</b><p><strong>νέος πελάτης τον χρόνο αρκεί</strong><span>Μια τυπική σελίδα μας εμφανίζεται σε <em>100+ οργανικές αναζητήσεις</em> τον μήνα, και οι πιο δυνατές φέρνουν <em>15 έως 60+ επισκέψεις</em> τον μήνα.</span></p><div class="calcl">Κάντε τον λογαριασμό: <b>15 επισκέψεις × 12 μήνες = 180 άνθρωποι</b> τον χρόνο που ψάχνουν αυτό που κάνετε. Χρειάζεστε <b>έναν</b>.</div></div>
     <div class="mg" id="mg" aria-hidden="true"><div class="q"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#5F6368" stroke-width="2.4"/><path d="M15.5 15.5L21 21" stroke="#5F6368" stroke-width="2.4" stroke-linecap="round"/></svg><span id="mq">οδοντίατρος Μενίδι</span></div><div class="hit"><small>1ο ΑΠΟΤΕΛΕΣΜΑ · ΟΡΓΑΝΙΚΟ</small><u id="mt">Οδοντίατρος στο Μενίδι — Το όνομά σας</u></div></div>
   </article>
 </section>
